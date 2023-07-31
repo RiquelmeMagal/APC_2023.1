@@ -1,0 +1,13 @@
+lista = []
+
+
+quantidade = int(input("Digite a quantidade de números: "))
+
+for i in range(quantidade):
+    lista.append(int(input("Digite um número: ")))
+
+maximo = max(lista)
+minimo = min(lista)
+amplitude = maximo - minimo
+
+print(amplitude)
