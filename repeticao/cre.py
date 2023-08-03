@@ -1,21 +1,22 @@
 matricula = input()
 cre = float(input())
+contador_cre = cre
+contador_quantidade = 1
 
-aux_matricula = ''
-cont = 0
-cres = 0
 while True:
-
-    aux_matricula = input()
-    if aux_matricula == '999':
+    cre_aux = cre
+     
+    matricula_ = input()
+    if matricula_ == '999':
         break
-    aux_cre = float(input())
-    cont += 1
-    cres += aux_cre
-    if aux_matricula > matricula:
-        matricula = aux_matricula
-        cre = aux_cre
+    cre_ = float(input())
 
-media_ = cres / cont
-print(matricula)
-print(f"{media_:.2f}")
+    contador_cre += cre_
+    contador_quantidade +=1
+    matricula_aux = matricula
+    if cre_ < cre_aux :
+        cre_aux = cre_
+        matricula_aux = matricula_
+
+print(matricula_aux)
+print(f"{contador_cre / contador_quantidade:.2f}")
