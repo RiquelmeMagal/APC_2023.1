@@ -1,4 +1,4 @@
-palavra = "bct"
+palavra = "amor"
 
 nova_palavra = ''
 
